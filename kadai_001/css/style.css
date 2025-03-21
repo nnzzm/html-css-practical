@@ -123,11 +123,13 @@ footer{
   .Works-photos{
     flex-direction: column;
   }
+  .Works-photos figure{
+    width: 100%;
+    margin:10px auto;
+
+  }
   .Works-photos img{
     width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
   }
   .Works-photos figcaption p{
     width: 100%;
