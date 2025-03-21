@@ -1,0 +1,129 @@
+body{
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  color:#000;
+  background-color: #fff;
+}
+
+/* header */
+.container{
+  width: 100%;
+  font-size: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+  font-weight: bold;
+}
+
+.container h1{
+  font-size: 34px;
+  margin-left: 150px;
+  border: 2px solid #000;
+  padding: 5px;
+  margin-left: 300px;
+}
+
+.container ul{
+  display: flex;
+  margin-right: 500px;
+}
+
+.container ul li a{
+  display: block;
+  color:#000;
+  margin:0 10px;
+  font-size:34px;
+  text-decoration: none;
+}
+
+/* About */
+.About{
+  text-align: center;
+  margin:50px 0;
+}
+.About figure{
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.About-figure img{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.About-figure figcaption{
+  margin-left: 100px;
+}
+
+/* Works */
+.Works > h1{
+  font-size: 34px;
+  text-align: center;
+  margin:150px 0 50px 0;
+}
+
+.Works-photos{
+  display: flex;
+  justify-content: center; 
+}
+
+.Works-photos img{
+  width: 210px;
+  height: auto;
+
+}
+
+.Works-photos figcaption p{
+  width: 210px; /* 画像の幅に合わせる */
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* footer */
+footer{
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    align-items: center;
+    justify-content: center;
+  }
+  .container h1{
+    margin: 0 15px;
+  }
+  .container ul{
+    margin-right: 0;
+  }
+  .container ul li a{
+    margin: 0 10px;
+  }
+  .About figure{
+    flex-direction: column;
+    text-align: left;
+  }
+  .About figure img{
+    width: 400;
+    height: auto;
+    margin: 0 auto;
+  }
+  .About figure figcaption{
+    margin-left: 50px;
+  }
+  .Works-photos{
+    flex-direction: column;
+  }
+  .Works-photos img{
+    width: 100%;
+  }
+  .Works-photos figcaption p{
+    width: 100%;
+  }
+  
+}
